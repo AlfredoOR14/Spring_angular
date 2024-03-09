@@ -2,6 +2,7 @@
     <div class="container text-center" style="margin: 30px;">
         <h3>Sistema de Inventario</h3>
     </div>
+
     <table class="table table-striped table-hover align-middle">
         <thead class="table-dark">
           <tr>
@@ -9,6 +10,7 @@
             <th scope="col">Descripcion del Producto</th>
             <th scope="col">Precio</th>
             <th scope="col">Existencia</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -17,6 +19,12 @@
             <td>{{produc.description}}</td>
             <td>{{produc.precio}}</td>
             <td>{{produc.existencia}}</td>
+            <td class="text-center">
+              <div>
+                <button (click)="editarProducto(produc.idProducto)" class="btn btn-warning btn-sm me-3">Editar</button>
+                <button (click)="eliminarProducto(produc.idProducto)" class="btn btn-danger btn-sm me-3">Eliminar</button>
+              </div>
+            </td>
           </tr>
          </tbody>
       </table>
