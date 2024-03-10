@@ -1,0 +1,34 @@
+version: '3.8'
+services:
+  spring-app:
+    container_name: spring-app
+    image: inventario-app:1.0.0
+    restart: always
+    build: .
+    depends_on:
+      - db_mysql_inventario
+    links:
+      - db_mysql_inventario
+    ports:
+      - 8080:8080
+    environment:
+      MYSQL_HOST: db_mysql_inventario
+      MYSQL_PORT: 3306
+      MYSQL_DATABASE: inventario_db
+      MYSQL_USERNAME: root
+      MYSQL_PASSWORD: 123456admin
+    networks:
+      - spring-net
+
+  db_mysql_inventario:
+    container_name: db_mysql_inventario
+    image: mysql:8.0.13
+    ports:
+      - 3307:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456admin
+      MYSQL_DATABASE: inventario_db
+    networks:
+      - spring-net
+networks:
+  spring-net:
