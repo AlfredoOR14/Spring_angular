@@ -1,4 +1,4 @@
-version: '1.8'
+version: '3.8'
 services:
   angular:
     container_name: angular-front
@@ -6,4 +6,4 @@ services:
     build: .
     ports:
       - 4200:80
-      
+
