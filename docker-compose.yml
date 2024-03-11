@@ -1,0 +1,9 @@
+version: '1.8'
+services:
+  angular:
+    container_name: angular-front
+    image: front:v01
+    build: .
+    ports:
+      - 4200:80
+      
