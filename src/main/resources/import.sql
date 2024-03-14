@@ -1,0 +1,9 @@
+INSERT INTO producto(description,existencia,precio) VALUES('Camiseta Amarilla','100','20.50');
+INSERT INTO producto(description,existencia,precio) VALUES('Pantalo Rojo','50','8.50');
+INSERT INTO producto(description,existencia,precio) VALUES('Camiseta Naranja','100','7.50');
+INSERT INTO producto(description,existencia,precio) VALUES('Gorra Gris','50','4.50');
+INSERT INTO producto(description,existencia,precio) VALUES('Reloj Blanco','10','19.50');
+INSERT INTO producto(description,existencia,precio) VALUES('Short negro','9','12.50');
+INSERT INTO producto(description,existencia,precio) VALUES('Pantalon verde','80','8.50');
+INSERT INTO producto(description,existencia,precio) VALUES('Camiseta lira','70','1.50');
+INSERT INTO producto(description,existencia,precio) VALUES('Camiseta azl','60','5.50');
