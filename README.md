@@ -4,6 +4,8 @@ Una breve descripción del proyecto va aquí.
 
 ![SAMURAI](imagenes/7b6def1234d467fcc28e77c9cc7e3eda.gif)
 
+&cross; Bienvenido?
+
 ## Instalación
 
 1. Clona este repositorio.
